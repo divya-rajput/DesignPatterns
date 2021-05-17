@@ -1,5 +1,5 @@
 # Single responsiblity principle
-There should be a proper seggregation of responsiblities in ever level of programming(Module, Interfaces, Classes, Functions, Methods, Objects). This principle helps us to build a code with is more understandable and has good unit testing and maintainability qualities. This is one step towards achieving proper pragramming paradigm.
+There should be a proper Segregation of responsiblities in every level of programming(Module, Interfaces, Classes, Functions, Methods, Objects). This principle helps us to build a code with is more understandable and has good unit testing and maintainability qualities. This is one step towards achieving proper pragramming paradigm.
 
 # How SRP can be achieved?
 SRP can be achieved by many ways like properly naming Module, Interfaces, Classes, Functions, Methods and Objects.
