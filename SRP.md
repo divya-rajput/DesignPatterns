@@ -5,7 +5,7 @@
 * This is one step towards achieving proper programming paradigm.
 
 ## How SRP can be achieved?
-* SRP can be achieved by various ways like proper naming conventions used for Module, Interfaces, Classes, Functions, Methods and Objects.
+* SRP can be achieved by various ways like proper naming conventions used for Module, Interfaces, Classes, Functions, Methods and Objects and also their proper encapsulation.
 * Here, based on the roles the responsiblity should be divided. Example: There should be a different class of a Manager(), TeamLead() and, an Employee(). Since, their Roles are different although being a part of same organization.
 * Similarly, Module, Interfaces, Functions, Methods and Objects should be seperated based on the their responsiblities.
 * In UI based applications SRP can be achieved by using various models like MVC(Model View Controller) and MVVM (Model View-View Model).
