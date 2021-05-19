@@ -13,9 +13,27 @@
 ## What happens when SRP is violated?
 * If SRP is not followed in the code, one will end up in writing complex code which is hard to understand by anyone else.
 
-
+## SRP code examples
+* The code which violates the SRP
 ```
-var add2 = function(number) {
-  return number + 2;
+class BaseTransform{
+  public void transform(){
+    if (data.format == "care")
+    //transform care data code
+    else if(data.format == "Demographics")
+    //transform demographics data code
+    else if(data.format == "vital-sign")
+    //transform vital-sign data code
+    else if(data.format == "Payer")
+    //transform Payer data code
+    else if(data.format == "Immunization")
+    //transform Immunization data code
+    else{
+    //Some error with data format provided
+    }
+   } 
 }
 ```
+In the above example, the responsiblities of care, demographics,payer,vital-sign and Immunization are different as they will contain diffrent kind of data. But still keeping them in one class is violation of SRP. Let's try to seperate their responsiblities and try to achieve SRP.
+
+* The code after achieving SRP
