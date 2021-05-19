@@ -34,6 +34,46 @@ class BaseTransform{
    } 
 }
 ```
-In the above example, the responsiblities of care, demographics,payer,vital-sign and Immunization are different as they will contain diffrent kind of data. But still keeping them in one class is violation of SRP. Let's try to seperate their responsiblities and try to achieve SRP.
+In the above example, the responsiblities of care, demographics,payer,vital-sign and Immunization are different as they will contain different kind of data. But still keeping them in one class is violation of SRP. Let's try to seperate their responsiblities and try to achieve SRP.
 
 * The code after achieving SRP
+
+```
+Interface BaseTransform{
+  public void Transform();
+  }
+ class CareDataTransform : BaseTransform{
+          public void Transform(){
+          //Transform care Data
+          }
+  }
+  class DemographicsDataTransform : BaseTransform{
+          public void Transform(){
+          //Transform Demographics Data
+          }
+  }
+  class VitalSignDataTransform : BaseTransform{
+          public void Transform(){
+          //Transform VitalSign Data
+          }
+  }
+  class PayerDataTransform : BaseTransform{
+          public void Transform(){
+          //Transform Payer Data
+          }
+  }
+  class ImmunizationDataTransform : BaseTransform{
+          public void Transform(){
+          //Transform Immunization Data
+          }
+  }
+class MainClass{
+      public static void Main(){
+      CareDataTransform CareObj = new CareDataTransform();
+      CareObj.Transform();
+      DemographicsDataTransform DemoObj = new DemographicsDataTransform();
+      DemoObj.Transform();
+      }
+ }
+           
+```
