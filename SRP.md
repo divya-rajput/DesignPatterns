@@ -12,3 +12,10 @@
 
 ## What happens when SRP is violated?
 * If SRP is not followed in the code, one will end up in writing complex code which is hard to understand by anyone else.
+
+
+```
+var add2 = function(number) {
+  return number + 2;
+}
+```
