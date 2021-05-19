@@ -77,3 +77,4 @@ class MainClass{
  }
            
 ```
+Here, We have seperated the responsiblities and achieved SRP. Now the code is more readable and simple.  
