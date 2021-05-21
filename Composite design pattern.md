@@ -2,7 +2,8 @@
 ## Definition
 * Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
 * Tree contains Leaf and composite elements.
-Example of an organization:
+
+## Example of an organization:
 ```
 interface Employee
     {
