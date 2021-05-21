@@ -45,8 +45,6 @@ class Circle : Shape{
 class Picture : Shape,Printer{
     public List<Shape> shapes;
     public List<Printer> printers;
-    Shape _sp;
-    Printer _pp;
     public printAll(){
         foreach (Printer printer in printers)
         {
