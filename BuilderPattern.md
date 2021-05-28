@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Numbers
+namespace Builder
 {
     class Customer
     {
@@ -22,6 +22,8 @@ namespace Numbers
         public string Email { get; internal set; }
         public string Employeer { get; internal set; }
         public Customer(string name, string panCard) { }
+        public Customer(string name, string panCard,string Email) { }
+        public Customer(string name, string panCard, string address,string Email,string ContactNumber) { }
         public void SetEmailId() { }
     }
     class CustomerBuilder
@@ -58,6 +60,9 @@ namespace Numbers
         }
     }
 }
+
+
+
 
 
 
