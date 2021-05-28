@@ -1,6 +1,7 @@
 # State Design Pattern
 * It is a behavioral design pattern which is used when an object changes its behavior based on its internal state.
 * Identifying abstraction and implementation is the main task.
+* Circuit breaker pattern
 
 ```
 using System;
